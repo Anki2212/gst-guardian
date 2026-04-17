@@ -1,1 +1,16 @@
 project_id = "aknaniifzpgoexcavtte"
+
+[functions.extract-invoice]
+verify_jwt = true
+
+[functions.reconcile]
+verify_jwt = true
+
+[functions.fraud-scan]
+verify_jwt = true
+
+[functions.vendor-score]
+verify_jwt = true
+
+[functions.gst-chatbot]
+verify_jwt = true
