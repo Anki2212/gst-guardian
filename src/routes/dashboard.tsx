@@ -77,7 +77,7 @@ function Dashboard() {
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                 <XAxis dataKey="month" stroke="var(--muted-foreground)" fontSize={11} />
                 <YAxis stroke="var(--muted-foreground)" fontSize={11} tickFormatter={(v) => `₹${(v/1000).toFixed(0)}k`} />
-                <Tooltip formatter={(v: number) => inr(v)} contentStyle={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8 }} />
+                <Tooltip formatter={(v: any) => inr(Number(v))} contentStyle={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8 }} />
                 <Legend wrapperStyle={{ fontSize: 12 }} />
                 <Bar dataKey="cgst" stackId="a" fill="var(--primary)" radius={[0,0,0,0]} />
                 <Bar dataKey="sgst" stackId="a" fill="var(--teal)" radius={[0,0,0,0]} />
